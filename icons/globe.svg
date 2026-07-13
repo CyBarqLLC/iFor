@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Rotating globe">
+  <style>
+    .spin { animation: globe-spin 20s linear infinite; }
+    @keyframes globe-spin {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-400px); }
+    }
+    @media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+  </style>
+
+  <!-- Rotating continents: two identical copies side by side for a seamless loop -->
+  <g class="spin">
+    <g>
+      <path fill="#B7FAFF" d="M100 90 C70 104 74 148 104 162 C134 176 160 158 158 130 C156 104 130 78 100 90 Z"/>
+      <path fill="#FFFF3C" d="M70 224 C54 234 58 262 84 268 C108 273 122 254 112 234 C104 218 86 214 70 224 Z"/>
+      <path fill="#BEFFBC" d="M250 228 C224 238 222 272 246 288 C272 306 312 296 318 266 C324 240 300 220 276 220 C266 219 262 224 250 228 Z"/>
+      <path fill="#B7FAFF" d="M332 104 C308 114 310 148 332 160 C354 172 382 158 386 132 C390 108 358 92 332 104 Z"/>
+    </g>
+    <g transform="translate(400,0)">
+      <path fill="#B7FAFF" d="M100 90 C70 104 74 148 104 162 C134 176 160 158 158 130 C156 104 130 78 100 90 Z"/>
+      <path fill="#FFFF3C" d="M70 224 C54 234 58 262 84 268 C108 273 122 254 112 234 C104 218 86 214 70 224 Z"/>
+      <path fill="#BEFFBC" d="M250 228 C224 238 222 272 246 288 C272 306 312 296 318 266 C324 240 300 220 276 220 C266 219 262 224 250 228 Z"/>
+      <path fill="#B7FAFF" d="M332 104 C308 114 310 148 332 160 C354 172 382 158 386 132 C390 108 358 92 332 104 Z"/>
+    </g>
+  </g>
+
+  <!-- White matte: hides continents outside the sphere -->
+  <path fill="#ffffff" fill-rule="evenodd"
+        d="M0 0H400V400H0Z M50 200a150 150 0 1 0 300 0a150 150 0 1 0 -300 0Z"/>
+
+  <!-- Regular wireframe cage -->
+  <g fill="none" stroke="#131313" stroke-width="2.4" stroke-linecap="round">
+    <circle cx="200" cy="200" r="150"/>
+    <line x1="200" y1="50" x2="200" y2="350"/>
+    <ellipse cx="200" cy="200" rx="50" ry="150"/>
+    <ellipse cx="200" cy="200" rx="100" ry="150"/>
+    <line x1="88" y1="100" x2="312" y2="100"/>
+    <line x1="59" y1="150" x2="341" y2="150"/>
+    <line x1="50" y1="200" x2="350" y2="200"/>
+    <line x1="59" y1="250" x2="341" y2="250"/>
+    <line x1="88" y1="300" x2="312" y2="300"/>
+  </g>
+</svg>

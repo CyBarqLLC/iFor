@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#BEFFBC" />
+
+  <title>iFor Mobile</title>
+  <meta name="description" content="iFor Mobile. We sell phones, laptops, and accessories in Amman, Jordan — chosen carefully so you get the right device for how you live and what you can spend." />
+  <meta name="application-name" content="iFor Mobile" />
+  <link rel="canonical" href="https://ifor.jo/" />
+  <meta property="og:site_name" content="iFor Mobile" />
+  <meta property="og:title" content="iFor Mobile" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:description" content="Phones, laptops, and accessories in Amman, Jordan." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="iFor Mobile" />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="favicon-square.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "iFor Mobile",
+    "description": "Phones, laptops, and accessories in Amman, Jordan.",
+    "telephone": "+962775551020",
+    "email": "info@ifor.jo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tabarbour, opposite Caesar Pizza, next to Shalmonah",
+      "addressLocality": "Amman",
+      "addressCountry": "JO"
+    },
+    "sameAs": [
+      "https://www.facebook.com/iformobilejo",
+      "https://www.instagram.com/iformobilejo"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <a class="nav__logo" href="index.html" aria-label="iFor Mobile — Home">
+        <img src="ifor mobile.svg" alt="iFor Mobile" />
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#process">How we work</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="contact.html">
+        Contact <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" role="dialog" aria-label="Menu">
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#process">How we work</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn--primary" href="contact.html">Contact us <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero__grid">
+          <div>
+            <h1 class="hero__title reveal">
+              <span>iFor</span>
+              <span class="thin">For You</span>
+            </h1>
+            <p class="hero__sub reveal reveal--d1">
+              We sell phones, laptops, and accessories in Amman. Each one is chosen
+              with care, so you get the right device for how you live and what you can spend.
+            </p>
+            <div class="hero__actions reveal reveal--d2">
+              <a class="btn btn--accent" href="#products">
+                See products <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn--outline" href="contact.html">Talk to us</a>
+            </div>
+            <p class="hero__place meta reveal reveal--d3">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Tabarbour, Amman, Jordan
+            </p>
+          </div>
+
+          <div class="hero__frame reveal reveal--d1" data-tilt aria-hidden="true">
+            <img src="icons/globe.svg" alt="" class="hero__globe" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRANDS ===== -->
+    <section class="brands" aria-label="Brands we carry">
+      <div class="container">
+        <p class="brands__label">Brands we carry</p>
+        <div class="brands__row reveal">
+          <span>Apple</span>
+          <span>Samsung</span>
+          <span>Huawei</span>
+          <span>Xiaomi</span>
+          <span>Oppo</span>
+          <span>Honor</span>
+          <span>Infinix</span>
+          <span>Tecno</span>
+          <span>Realme</span>
+          <span>Nokia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <h2 class="about__title reveal">A simple way to buy good technology.</h2>
+        <div class="about__copy">
+          <p class="reveal reveal--d1">
+            iFor Mobile is a device shop in Amman. We keep a focused range of phones,
+            laptops, and accessories, so choosing is easy instead of confusing.
+          </p>
+          <p class="reveal reveal--d2">
+            We started after years of working with devices in Dubai and the United States.
+            We brought that experience home to Jordan, with clear advice and fair prices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="products__head">
+          <h2 class="section-title reveal">What we sell.</h2>
+          <p class="lead reveal reveal--d1">
+            A focused range built around Apple, with trusted options from other brands.
+            If you need something specific, ask and we will find it for you.
+          </p>
+        </div>
+
+        <div class="device-grid reveal">
+          <div class="device">
+            <span class="device__icon"><img src="icons/iphone.png" alt="" /></span>
+            <span>iPhone</span>
+          </div>
+          <div class="device">
+            <span class="device__icon"><img src="icons/ipad.png" alt="" /></span>
+            <span>iPad</span>
+          </div>
+          <div class="device">
+            <span class="device__icon"><img src="icons/macbook.png" alt="" /></span>
+            <span>MacBook</span>
+          </div>
+          <div class="device">
+            <span class="device__icon"><img src="icons/imac.png" alt="" /></span>
+            <span>iMac</span>
+          </div>
+          <div class="device">
+            <span class="device__icon"><img src="icons/watch.png" alt="" /></span>
+            <span>Apple Watch</span>
+          </div>
+          <div class="device">
+            <span class="device__icon"><img src="icons/appletv.png" alt="" /></span>
+            <span>Apple TV</span>
+          </div>
+        </div>
+
+        <div class="cats reveal reveal--d1" aria-label="Also available">
+          <span>Maintenance</span>
+          <span>Accessories</span>
+          <span>Bundles</span>
+          <span>iOS</span>
+          <span>Android</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="process__head">
+          <h2 class="section-title reveal">How we work.</h2>
+          <p class="lead reveal reveal--d1">
+            Three simple steps that keep quality high and prices fair for every customer.
+          </p>
+        </div>
+
+        <div class="process__grid">
+          <article class="step reveal">
+            <span class="step__num">01</span>
+            <h3>We choose</h3>
+            <p>We source devices and accessories from suppliers we trust.</p>
+          </article>
+          <article class="step reveal reveal--d1">
+            <span class="step__num">02</span>
+            <h3>We check</h3>
+            <p>Every product is tested for quality and that it works as it should.</p>
+          </article>
+          <article class="step reveal reveal--d2">
+            <span class="step__num">03</span>
+            <h3>We price it fairly</h3>
+            <p>You get honest pricing and clear answers before you buy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section" aria-label="Get help choosing">
+      <div class="container">
+        <div class="cta__panel reveal">
+          <div class="cta__text">
+            <h2>Not sure which one to pick?</h2>
+            <p>
+              Tell us how you use your phone or laptop, and your budget.
+              We will help you choose the device that fits.
+            </p>
+            <a class="btn btn--accent" href="contact.html">
+              Contact us <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="cta__aside" aria-hidden="true">
+            <div class="g"><img src="icons/iphone.png" alt="" /></div>
+            <div class="g"><img src="icons/macbook.png" alt="" /></div>
+            <div class="g"><img src="icons/watch.png" alt="" /></div>
+            <div class="g"><img src="icons/ipad.png" alt="" /></div>
+            <div class="g"><img src="icons/imac.png" alt="" /></div>
+            <div class="g"><img src="icons/appletv.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="faq__head">
+          <h2 class="section-title reveal">Questions, answered.</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq__item is-open reveal">
+            <button class="faq__q" aria-expanded="true">
+              <span>What do you sell?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <div class="faq__a-inner">
+                Phones, laptops, and accessories. We focus on Apple, and we also carry
+                good options from other trusted brands.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal--d1">
+            <button class="faq__q" aria-expanded="false">
+              <span>Do you have different Apple models?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <div class="faq__a-inner">
+                Yes. We keep several Apple generations, so you can find the right mix of
+                features, speed, and price.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal--d2">
+            <button class="faq__q" aria-expanded="false">
+              <span>Can you help me choose?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <div class="faq__a-inner">
+                Of course. Tell us how you use your device and your budget, and we will
+                suggest what fits. Call us or visit the shop in Tabarbour, Amman.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="ifor mobile.svg" alt="iFor Mobile" />
+          <p class="footer__tag">Phones, laptops, and accessories. Based in Amman, Jordan.</p>
+          <p class="footer__addr">Tabarbour, Amman. Opposite Caesar Pizza, next to Shalmonah.</p>
+          <a class="btn btn--primary footer__map"
+             href="https://maps.app.goo.gl/HjreXvgXYiieEhS9A"
+             target="_blank" rel="noopener">
+            Visit location <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#process">How we work</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="tel:+96277555 1020">+962 77 555 1020</a></li>
+            <li><a href="mailto:info@ifor.jo">info@ifor.jo</a></li>
+            <li><a href="mailto:support@ifor.jo">support@ifor.jo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> iFor Mobile. All rights reserved.</span>
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.facebook.com/iformobilejo" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.6-1.5H16.6V4.4C16.3 4.4 15.3 4.3 14.2 4.3c-2.4 0-4 1.4-4 4v2.2H7.7v3h2.5V21h3.3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/iformobilejo" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+              <circle cx="12" cy="12" r="3.6"/>
+              <circle cx="17" cy="7" r="0.9" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=3" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
